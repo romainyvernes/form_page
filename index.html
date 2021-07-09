@@ -3,7 +3,102 @@
   <head>
     <meta charset="utf-8">
     <title>Form Page</title>
+    <link rel="preconnect" 
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,400&display=swap" 
+          rel="stylesheet">
     <link rel="stylesheet" href="main.css">
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div>
+        <p>Already have an Intuit account?</p>
+        <a href="#">I forgot my User ID or Password</a>
+      </div>
+      <button>
+        <img src="assets/lock_icon.svg" alt="Locked padlock icon"> Sign In
+      </button>
+    </header>
+
+    <main>
+      <header>
+        <a href="#"><img src="assets/intuit_logo.svg" alt="Intuit logo"></a>
+        <ul>
+          <li>
+            <a>
+              <img src="assets/mint_logo.svg" alt="Mint company logo">mint
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="assets/quickbooks_logo.png" alt="QuickBooks logo">quickbooks
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="assets/turbotax_logo.png" alt="TurboTax logo">turbotax
+            </a>
+          </li>
+        </ul>
+      </header>
+      <form>
+        <hgroup>
+          <h1>Create an Intuit account</h1>
+          <h2>One account for everything Intuit, including Mint.</h2>
+          <a href="#">Learn more</a>
+        </hgroup>
+        <fieldset>
+          <label>
+            Email address
+            <input type="email" name="email-address">
+          </label>
+          <label>
+            Phone
+            <span>(recommended)</span>
+            <input type="tel" name="phone-number">
+            <span>Standard call, message, or data rates may apply.</span>
+          </label>
+          <label>
+            Password
+            <input type="password" name="password">
+          </label>
+        </fieldset>
+        <button>
+          <img src="assets/lock_icon.svg" alt="Locked padlock icon"> Create Account
+        </button>
+        <p>
+          <em>
+            By selecting Create Account, you agree to our <a href="#">Terms</a> and
+            have read and acknowledge our <a href="#">Global Privacy
+            Statement</a>.
+          </em>
+        </p>
+        <footer>
+          <p>Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Use.</a></p>
+        </footer>
+      </form>
+      <footer>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Legal</a>
+            </li>
+            <li>
+              <a href="#">Privacy</a>
+            </li>
+            <li>
+              <a href="#">Security</a>
+            </li>
+          </ul>
+        </nav>
+        <p>&copy; 2021 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.</p>
+        <p>Terms and conditions, features, support, pricing, and service options subject to change without notice.</p>
+      </footer>
+    </main>
+
+    <footer>
+      <button>Privacy Settings</button>
+    </footer>
+  </body>
 </html>
