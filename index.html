@@ -6,38 +6,38 @@
     <link rel="preconnect" 
           href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,400&display=swap" 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,300&display=swap" 
           rel="stylesheet">
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <header>
-      <div>
+    <header class="page-header">
+      <div class="forgot-password">
         <p>Already have an Intuit account?</p>
         <a href="#">I forgot my User ID or Password</a>
       </div>
-      <button>
-        <img src="assets/lock_icon.svg" alt="Locked padlock icon"> Sign In
+      <button class="signin-button">
+        <img src="assets/lock_icon.svg" alt="Locked padlock icon" class="locked-padlock"> Sign In
       </button>
     </header>
 
     <main>
       <header>
-        <a href="#"><img src="assets/intuit_logo.svg" alt="Intuit logo"></a>
-        <ul>
+        <a href="#"><img src="assets/intuit_logo.svg" alt="Intuit logo" class="main-logo"></a>
+        <ul class="company-list">
           <li>
             <a>
-              <img src="assets/mint_logo.svg" alt="Mint company logo">mint
+              <img src="assets/mint_logo.png" alt="Mint company logo" class="company-logo">mint
             </a>
           </li>
           <li>
             <a>
-              <img src="assets/quickbooks_logo.png" alt="QuickBooks logo">quickbooks
+              <img src="assets/quickbooks_logo.png" alt="QuickBooks logo" class="company-logo">quickbooks
             </a>
           </li>
           <li>
             <a>
-              <img src="assets/turbotax_logo.png" alt="TurboTax logo">turbotax
+              <img src="assets/turbotax_logo.png" alt="TurboTax logo" class="company-logo">turbotax
             </a>
           </li>
         </ul>
@@ -47,15 +47,15 @@
           <h1>Create an Intuit account</h1>
           <h2>One account for everything Intuit, including Mint.</h2>
           <a href="#">Learn more</a>
+          <h2 class="alternate-signin">Already have an account? <a href="#">Sign In</a></h2>
         </hgroup>
-        <fieldset>
+        <fieldset class="user-data">
           <label>
             Email address
             <input type="email" name="email-address">
           </label>
-          <label>
-            Phone
-            <span>(recommended)</span>
+          <label class="phone-number-label">
+            Phone <span>(recommended)</span>
             <input type="tel" name="phone-number">
             <span>Standard call, message, or data rates may apply.</span>
           </label>
@@ -64,21 +64,23 @@
             <input type="password" name="password">
           </label>
         </fieldset>
-        <button>
-          <img src="assets/lock_icon.svg" alt="Locked padlock icon"> Create Account
-        </button>
-        <p>
-          <em>
-            By selecting Create Account, you agree to our <a href="#">Terms</a> and
-            have read and acknowledge our <a href="#">Global Privacy
-            Statement</a>.
-          </em>
-        </p>
+        <fieldset>
+          <button class="signin-button create-account-button">
+            <img src="assets/lock_icon.svg" alt="Locked padlock icon" class="locked-padlock"> Create Account
+          </button>
+          <p>
+            <em>
+              By selecting Create Account, you agree to our <a href="#">Terms</a> and
+              have read and acknowledge our <a href="#">Global Privacy
+              Statement</a>.
+            </em>
+          </p>
+        </fieldset>
         <footer>
           <p>Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Use.</a></p>
         </footer>
       </form>
-      <footer>
+      <footer class="main-footer">
         <nav>
           <ul>
             <li>
@@ -97,7 +99,7 @@
       </footer>
     </main>
 
-    <footer>
+    <footer class="page-footer">
       <button>Privacy Settings</button>
     </footer>
   </body>
